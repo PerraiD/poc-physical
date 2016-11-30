@@ -5,7 +5,7 @@ $(document).ready(function(){
               card2:"geo:0,0?q=27%20Boulevard%20de%20Stalingrad,%2044041%20Nantes,%20France",
               card3:"geo:0,0?q=Château%20des%20ducs%20de%20Bretagne,%20Place%20Marc%20Elder,%20Nantes,%20Frances"
               }
-  if(iOS){
+  if(!iOS){
     $('[id^=card]').each(function (index,value) {
       $(this).click("location.href="+uris[$(this).id]);
     });
