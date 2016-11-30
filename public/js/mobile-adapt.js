@@ -6,9 +6,9 @@ $(document).ready(function(){
                 "geo:0,0?q=Château%20des%20ducs%20de%20Bretagne,%20Place%20Marc%20Elder,%20Nantes,%20Frances"
              ]
   if(!iOS){
-    console.log("passe");
-    $('img[id^=card]').each(function (index,value) {            
-      $(this).attr("onclick", "location.href='"+uris[index+1]+'\'');
+    $('img[id^=card]').each(function (index,value) {
+       console.log(index);            
+      $(this).attr("onclick", "location.href='"+uris[index]+'\'');
     });
   }
 })
